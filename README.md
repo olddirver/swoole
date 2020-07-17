@@ -11,7 +11,7 @@ Swoole\Server(string $host = '0.0.0.0', int $port = 0, int $mode = SWOOLE_PROCES
 - string $host 
 监听的ip地址
 
-- int ￥port
+- int $port
 监听的端口
 
 如果$socketType值为UnixSocket Stream/Dgram，此参数将被忽略
@@ -35,7 +35,7 @@ server的类型
 
 使用$sock_type | SWOOLE_SSL 可以启用SSL隧道加密，启用SSL后必须配置ssl_key_file和ssl_cert_file
 
-> 什么是IPC
+> 什么是IPC？
 同一台主机上两个进程间通信(简称IPC)
 
 - Unix Socket
