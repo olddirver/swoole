@@ -1,3 +1,15 @@
+###### swoole是什么？
+- 异步、并行、高性能
+- 纯C编写
+- php扩展
+
+###### swoole能做什么？
+- 异步多线程服务器及客户端
+- 异步MySQL、Redis、数据库连接池、任务队列
+- http/websocket服务器/客户端
+- 异步文件读写
+- Swoole2.0支持协程
+
 ###### TCP服务器
 
 ```
@@ -10,6 +22,11 @@ Swoole\Server(string $host = '0.0.0.0', int $port = 0, int $mode = SWOOLE_PROCES
 ```
 - string $host 
 监听的ip地址
+127.0.0.1 本地ip
+x.x.x.x 监听对应外网ip
+swoole提供的addlistener / 0.0.0.0 监听多个ip
+
+规则：ipv4 / ipv6 如：::0
 
 - int $port
 监听的端口
