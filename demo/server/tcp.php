@@ -1,6 +1,6 @@
 <?php
 // 创建server对象，监听127.0.0.1:9501端口，默认是多进程模式，socket_type 默认是tcp
-$serv = new Swoole\Server('127.0.0.1', 9501);
+$serv = new Swoole\Server('0.0.0.0', 9501);
 
 // 必须再$serv ->start之前调用
 $serv->set([
